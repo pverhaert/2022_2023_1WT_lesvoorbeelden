@@ -1,0 +1,136 @@
+/* https://fonts.google.com/ */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Smooch&display=swap');
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+body {
+    background-image: url('../assets/kerst.jpg');
+    background-attachment: fixed;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 13px 7px 11px rgba(0, 0, 0, 0.47);
+}
+h1 span {
+    font-family: 'Smooch', cursive;
+    font-size: 3.5rem;
+    color: #666464;
+}
+
+blockquote {
+    background-color: rgba(255, 118, 118, 0.15);
+    padding: 1rem;
+    border: solid 1px red;
+    border-left-width: 10px;
+}
+
+#vlag {
+    height: 150px;
+    width: 150px;
+    background-color: yellow;
+    border: 1px solid #000;
+    border-left: 150px solid black;
+    border-right: 150px solid red;
+
+}
+
+a {
+    color: firebrick;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+nav {
+    text-align: center;
+}
+
+nav a {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #063f03;
+}
+nav a:hover {
+    text-decoration: none;
+}
+
+p {
+    text-align: justify;
+}
+
+ul {
+
+    list-style: '★' inside;
+}
+
+ul ul {
+    list-style-type: '☆';
+}
+
+li {
+    /*border: solid 1px red;*/
+}
+
+figure {
+    border: solid 1px black;
+    padding: 1rem;
+    text-align: center;
+    /*background-color: rgba(217, 237, 182, 0.43);*/
+    backdrop-filter: grayscale(100%);
+}
+figure img {
+    margin: 1rem;
+    border-radius: 2rem;
+    border: solid 1px black;
+    transition: 500ms;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+figure img:hover {
+    border-radius: 50%;
+    transform: rotate(180deg);
+}
+
+.driehoek {
+    /* zie: https://bennettfeely.com/clippy/ */
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    transition: 300ms;
+}
+
+.driehoek:hover {
+    transform: scale(1.2);
+    filter: grayscale(80%);
+}
+
+table {
+    caption-side: bottom;
+    border: solid 1px black;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: solid 1px black;
+    padding: 5px;
+}
+
+th {
+    background-color: #740303;
+    color: #ffffff;
+}
+
+col {
+    width: 100px;
+}
+
+.w200 {
+    width: 200px;
+}

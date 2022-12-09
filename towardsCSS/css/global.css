@@ -1,0 +1,20 @@
+body {
+    background-color: #dfdfcb;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+p {
+    /*color: #ff0f0f;*/
+}
+
+span, div {
+    background-color: #f4d2d2;
+}
+
+.blue {
+    color: deepskyblue;
+}
+.greenBg {
+    background-color: palegreen;
+}
+

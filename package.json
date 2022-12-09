@@ -1,0 +1,12 @@
+{
+  "name": "voorbeelden_1wt",
+  "version": "1.0.0",
+  "description": "<p style=\"text-align: center\">\r     <img src=\"https://www.thomasmore.be/sites/default/files/inline-images/tm_eng_standaardlogo_web.png\" alt=\"Thomas More IT Factory\" width=\"300\" />\r </p>",
+  "main": "index.js",
+  "scripts": {
+    "watch": "live-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
