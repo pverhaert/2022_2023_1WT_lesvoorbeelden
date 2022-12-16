@@ -4,7 +4,8 @@
     <img src="https://www.thomasmore.be/sites/default/files/inline-images/tm_eng_standaardlogo_web.png" alt="Thomas More IT Factory" width="300" />
 </p>
 
-> :exclamation: Houd deze repo 100% up-to-date :exclamation:
+## Download aangepaste versie
+- `git pull` om de laatste versie te downloaden en te 'mergen' met je lokale versie
 
 ## Gebruik
 1. Start de lokale webserver vanuit de terminal van PhpStorm via het commando `live-server`
