@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Syne+Mono&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    line-height: 1.5;
+    background-color: rgba(223, 250, 201, 0.31);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    position: fixed;
+    /*top: 0;*/
+    top: -54px;
+    left: 0;
+    right: 0;
+    opacity: 0.8;
+    cursor: pointer;
+    background-color: #8e9282;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .3);
+    z-index: 50;
+    backdrop-filter: blur(24px);
+    transition: all 0.5s ease-out;
+}
+
+nav:hover {
+    transform: translateY(54px);
+}
+
+nav ul {
+    display: flex;
+    padding-bottom: 1.5rem;
+    list-style: none;
+}
+
+nav ul li {
+    border-bottom: 1px solid #595b51;
+    flex: 1 1 100%;
+}
+
+nav ul li a {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Syne Mono', monospace;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+nav ul li a:hover {
+    background-color: #595b51;
+}
+nav ul li a.active {
+    background-color: rgba(89, 91, 81, 0.87);
+}
+
+header * {
+    font-size: 1rem;
+    fwont-weight: normal;
+    margin: 0.5rem;
+    color: #fff;
+    text-shadow: 0 0 10px #626a5b;
+}
+
+main {
+    width: 700px;
+    height: 500px;
+    background-color: white;
+    flex-shrink: 0;
+    cursor: move;
+    position: relative;
+    border: .2rem solid #f5ffea;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .7);
+    /* make section relative to use absolute positioning inside it */
+    position: relative;
+}
+
+
+#picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /*opacity: 0;*/
+    /* translate img */
+    transition: 1s;
+}
+
+
+main:hover #picture {
+    opacity: .1;
+    filter: grayscale(100%);
+}
+
+#card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*background-color: #facfc9;*/
+
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+
+}
+
+#left {
+    border-right: dashed 1px #c0c0c0;
+    flex: 1 1 50%;
+    font-family: 'Satisfy', cursive;
+    color: #3e3d3d;
+}
+
+#left h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+#left h2 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+#left p {
+    font-size: 1.5rem;
+    line-height: 2;
+}
+
+#left p:first-of-type {
+    transform: rotate(-1deg);
+}
+
+#left p:nth-of-type(2) {
+    transform: rotate(-3deg);
+}
+#left p:nth-of-type(3) {
+    transform: rotate(1deg);
+    margin-top: 1rem;
+}
+
+#left p:last-of-type {
+    text-align: right;
+    margin: 0 1rem;
+    font-size: 1rem;
+}
+
+#right {
+    flex: 1 1 50%;
+    text-align: right;
+}
+
+#right img {
+    margin-bottom: 3rem;
+    mix-blend-mode: multiply;
+}
+
+#right p {
+    font-family: 'Syne Mono', monospace;
+    line-height: .6rem;
+    text-align: left;
+    margin: 1rem 0 0 1rem;
+    padding-top: 1rem;
+    border-bottom: 1px dotted #4f4f4f;
+}
+
+#right p:nth-of-type(2n) {
+    padding-left: .5rem;
+}
+
+@media print {
+    body {
+        display: block;
+    }
+    main {
+        width: 100%;
+        height: unset;
+        overflow: unset;
+        border: unset;
+        border-radius: unset;
+        box-shadow: unset;
+    }
+    #card, #picture {
+        position: unset;
+    }
+}

@@ -1,0 +1,47 @@
+/*
+Bootstrap 5 breakpoints (see https://getbootstrap.com/docs/5.2/layout/breakpoints/)
+    - xs: 0px
+    - sm: 576px
+    - md: 768px
+    - lg: 992px
+    - xl: 1200px
+    - xxl: 1400px
+
+Bootstrap 5 paddings and margins (see https://getbootstrap.com/docs/5.2/utilities/spacing/):
+    - px: padding left and right, py: padding top and bottom
+    - pt: padding top, pb: padding bottom, pl: padding left, pr: padding right
+    - ps: padding start, pe: padding end
+    - idem for margins (m instead of p)
+    - possible values: 0, 1, 2, 3, 4, 5, auto (e.g. px-3, my-5, ms-1)
+    - combinations with breakpoints (e.g. px-sm-3, my-md-5, me-lg-1)
+
+Always use the correct nesting of classes to produce a decent grid layout.
+- use the "container" class to wrap the grid
+- use the "row" class to wrap the columns
+- use the "col" class to define the columns
+- use the "col-xx-##" class to define the number of columns (##) for the xx breakpoint
+*/
+
+
+/* styles below are only for debugging */
+.container {
+    outline: 1px solid red;
+    background: rgba(255, 0, 0, 0.2);
+}
+
+.row {
+    outline: 1px solid green;
+    background: rgba(0, 255, 0, 0.2);
+}
+
+[class^="col"] {
+    outline: 1px solid blue;
+    background: rgba(0, 0, 255, 0.2);
+}
+
+[class^="col"]::first-letter {
+    display: inline-block;
+    padding: 0 0.5em;
+    background: darkred;
+    color: white;
+}
